@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
       amount: 0.3,
     },
     ease: 'power4.inOut',
-  }),
-    from(
+  })
+    .from(
       '.close',
       0.5,
       {
@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
         delay: 1,
       },
       '<'
-    );
-  from('.footer', 0.5, {
-    opacity: 0,
-  });
+    )
+    .from('.footer', 0.5, {
+      opacity: 0,
+    });
 
   drawer.addEventListener('click', function () {
     if (tl.reversed()) {
